@@ -5,6 +5,7 @@ mainContainer.classList.add('main-container');
 document.body.appendChild(mainContainer);
 
 let h1 = document.createElement('h1');
+h1.textContent = 'Etch-A-Sketch';
 
 let selectionContainer = document.createElement('div');
 selectionContainer.classList.add('selection-conainer');
@@ -19,3 +20,16 @@ squareContainer.classList.add('square-container');
 sketchContainer.appendChild(squareContainer);
 
 document.body.append(h1, selectionContainer, sketchContainer);
+
+let numSquares = parseInt(prompt('How many squares?'));
+
+function createSquares(enteredNumSquares) {
+    for (let i = 0; i < enteredNumSquares; i++) {
+        let square = document.createElement('div');
+        square.classList.add('squares');
+        square.setAttribute('style', 'border:1px solid black; height: 100px; width: 100px;')
+        squareContainer.appendChild(square);
+    }
+}
+
+createSquares(numSquares);
