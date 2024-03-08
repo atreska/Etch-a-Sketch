@@ -16,7 +16,7 @@ selectionContainer.appendChild(selectionDiv);
 let sketchContainer = document.createElement('div');
 sketchContainer.classList.add('sketch-container');
 let squareContainer = document.createElement('div');
-squareContainer.classList.add('square-container');
+squareContainer.className = 'square-container';
 sketchContainer.appendChild(squareContainer);
 
 document.body.append(h1, selectionContainer, sketchContainer);
@@ -25,10 +25,14 @@ let numSquares = parseInt(prompt('How many squares?'));
 
 function createSquares(enteredNumSquares) {
     for (let i = 0; i < enteredNumSquares; i++) {
-        let square = document.createElement('div');
-        square.classList.add('squares');
-        square.setAttribute('style', 'border:1px solid black; height: 100px; width: 100px;')
-        squareContainer.appendChild(square);
+        let cellContainer = document.createElement('div');
+        cellContainer.className = 'cell-container';
+        for (let j = 0; j < enteredNumSquares; j++) {
+            let cell = document.createElement('div');
+            cell.className = 'squares';
+            cellContainer.append(cell);
+        }
+        squareContainer.append(cellContainer);
     }
 }
 
