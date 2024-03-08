@@ -1,0 +1,25 @@
+.main-container,
+h1,
+.selection-container,
+.selection,
+.sketch-container,
+.square-container {
+    border: 1px solid red;
+}
+
+.sketch-container {}
+
+.square-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cell-container {
+    display: flex;
+}
+
+.squares {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
