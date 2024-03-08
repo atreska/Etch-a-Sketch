@@ -7,7 +7,14 @@ h1,
     border: 1px solid red;
 }
 
-.sketch-container {}
+h1 {
+    text-align: center;
+}
+
+.sketch-container {
+    display: flex;
+    justify-content: center;
+}
 
 .square-container {
     display: flex;
