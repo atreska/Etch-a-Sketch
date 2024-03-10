@@ -19,11 +19,34 @@ selectionDiv.appendChild(selectionButton);
 
 function removeGrid() {
     while (sketchBoardContainer.hasChildNodes()) {
-        sketchBoardContainer.removeChild(sketchBoardContainer.lastChild);
+        sketchBoardContainer.removeChild(sketchBoardContainer.firstChild);
     }
 }
 
-selectionButton.addEventListener('click', removeGrid);
+function createNewGrid() {
+
+    removeGrid();
+
+    let usrSeleciton = parseInt(prompt('How many squares would you like for the grid?'));
+
+    for (let i = 0; i < usrSeleciton; i++) {
+        let newSquareContainer = document.createElement('div');
+        newSquareContainer.className = 'square-container';
+        for (let j = 0; j < usrSeleciton; j++) {
+            let newSquare = document.createElement('div');
+            newSquare.className = 'squares';
+
+            newSquare.addEventListener('mouseover', () => {
+                newSquare.style.backgroundColor = 'red';
+            })
+
+            newSquareContainer.appendChild(newSquare);
+        }
+        sketchBoardContainer.appendChild(newSquareContainer);
+    }
+}
+
+selectionButton.addEventListener('click', createNewGrid);
 
 
 let sketchContainer = document.createElement('div');
