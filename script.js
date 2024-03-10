@@ -42,7 +42,7 @@ sketchContainer.appendChild(sketchBoardContainer);
 
 document.body.append(h1, selectionContainer, sketchContainer);
 
-let numSquares = parseInt(prompt('How many squares?'));
+
 
 function createSquares(enteredNumSquares) {
     for (let i = 0; i < enteredNumSquares; i++) {
@@ -63,4 +63,4 @@ function createSquares(enteredNumSquares) {
     }
 }
 
-createSquares(numSquares);
+createSquares(16);
