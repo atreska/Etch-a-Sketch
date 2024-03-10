@@ -3,7 +3,7 @@ h1,
 .selection-container,
 .selection,
 .sketch-container,
-.square-container {
+.sketch-board-container {
     border: 1px solid red;
 }
 
@@ -23,7 +23,7 @@ h1 {
     height: 900px;
 }
 
-.cell-container {
+.square-container {
     display: flex;
     flex: 1;
 }
