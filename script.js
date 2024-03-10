@@ -25,20 +25,20 @@ let numSquares = parseInt(prompt('How many squares?'));
 
 function createSquares(enteredNumSquares) {
     for (let i = 0; i < enteredNumSquares; i++) {
-        let cellContainer = document.createElement('div');
-        cellContainer.className = 'cell-container';
+        let squareContainer = document.createElement('div');
+        squareContainer.className = 'square-container';
         for (let j = 0; j < enteredNumSquares; j++) {
-            let cell = document.createElement('div');
-            cell.className = 'squares';
+            let square = document.createElement('div');
+            square.className = 'squares';
 
-            cell.addEventListener('mouseover', () => {
-                cell.style.backgroundColor = 'red';
+            square.addEventListener('mouseover', () => {
+                square.style.backgroundColor = 'red';
             })
 
 
-            cellContainer.append(cell);
+            squareContainer.append(square);
         }
-        sketchBoardContainer.append(cellContainer);
+        sketchBoardContainer.append(squareContainer);
     }
 }
 
