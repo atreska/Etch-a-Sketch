@@ -16,6 +16,16 @@ h1 {
     justify-content: center;
 }
 
+.selection-container {
+    padding: 2em;
+}
+
+.selection {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
 .sketch-board-container {
     display: flex;
     flex-direction: column;
