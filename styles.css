@@ -7,10 +7,6 @@ h1,
     border: 1px solid red;
 }
 
-/* .main-container {
-    width: 100%;
-} */
-
 h1 {
     text-align: center;
 }
@@ -20,7 +16,7 @@ h1 {
     justify-content: center;
 }
 
-.square-container {
+.sketch-board-container {
     display: flex;
     flex-direction: column;
     width: 1000px;
