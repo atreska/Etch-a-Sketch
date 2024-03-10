@@ -28,6 +28,9 @@ function createNewGrid() {
     removeGrid();
 
     let usrSeleciton = parseInt(prompt('How many squares would you like for the grid?'));
+    while (usrSeleciton < 1 || usrSeleciton > 100) {
+        usrSeleciton = parseInt(prompt('Number must be from 1 - 100'));
+    }
     createSquares(usrSeleciton);
 }
 
