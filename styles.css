@@ -1,23 +1,31 @@
-.main-container,
+html {
+    background-color: rgb(48, 63, 98);
+}
+
+/* .main-container,
 h1,
 .selection-container,
 .selection,
-.sketch-container,
-.sketch-board-container {
+.sketch-container {
     border: 1px solid red;
-}
+} */
 
 h1 {
     text-align: center;
+    margin: 1em 0 0 0;
 }
 
 .sketch-container {
     display: flex;
     justify-content: center;
+    border: 30px solid aquamarine;
+    border-radius: 50px;
+    background-color: rgb(131, 31, 31);
+    margin: 0 3em;
 }
 
 .selection-container {
-    padding: 2em;
+    padding: 0 0 0 0;
 }
 
 .selection {
@@ -30,7 +38,10 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 1000px;
-    height: 900px;
+    height: 800px;
+    border: 5px solid black;
+
+    background-color: white;
 }
 
 .square-container {
@@ -40,5 +51,5 @@ h1 {
 
 .squares {
     flex: 1;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
