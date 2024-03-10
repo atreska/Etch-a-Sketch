@@ -8,10 +8,23 @@ let h1 = document.createElement('h1');
 h1.textContent = 'Etch-A-Sketch';
 
 let selectionContainer = document.createElement('div');
-selectionContainer.classList.add('selection-conainer');
+selectionContainer.classList.add('selection-container');
 let selectionDiv = document.createElement('div');
 selectionDiv.classList.add('selection');
 selectionContainer.appendChild(selectionDiv);
+
+let selectionButton = document.createElement('button');
+selectionButton.textContent = 'Choose a Grid';
+selectionDiv.appendChild(selectionButton);
+
+function removeGrid() {
+    while (sketchBoardContainer.hasChildNodes()) {
+        sketchBoardContainer.removeChild(sketchBoardContainer.lastChild);
+    }
+}
+
+selectionButton.addEventListener('click', removeGrid);
+
 
 let sketchContainer = document.createElement('div');
 sketchContainer.classList.add('sketch-container');
