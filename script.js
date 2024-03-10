@@ -15,9 +15,9 @@ selectionContainer.appendChild(selectionDiv);
 
 let sketchContainer = document.createElement('div');
 sketchContainer.classList.add('sketch-container');
-let squareContainer = document.createElement('div');
-squareContainer.className = 'square-container';
-sketchContainer.appendChild(squareContainer);
+let sketchBoardContainer = document.createElement('div');
+sketchBoardContainer.className = 'sketch-board-container';
+sketchContainer.appendChild(sketchBoardContainer);
 
 document.body.append(h1, selectionContainer, sketchContainer);
 
@@ -30,9 +30,15 @@ function createSquares(enteredNumSquares) {
         for (let j = 0; j < enteredNumSquares; j++) {
             let cell = document.createElement('div');
             cell.className = 'squares';
+
+            cell.addEventListener('mouseover', () => {
+                cell.style.backgroundColor = 'red';
+            })
+
+
             cellContainer.append(cell);
         }
-        squareContainer.append(cellContainer);
+        sketchBoardContainer.append(cellContainer);
     }
 }
 
