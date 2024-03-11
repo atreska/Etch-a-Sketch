@@ -43,7 +43,7 @@ let sketchBoardContainer = document.createElement('div');
 sketchBoardContainer.className = 'sketch-board-container';
 sketchContainer.appendChild(sketchBoardContainer);
 
-document.body.append(h1, selectionContainer, sketchContainer);
+mainContainer.append(h1, selectionContainer, sketchContainer);
 
 
 
@@ -56,7 +56,7 @@ function createSquares(enteredNumSquares) {
             square.className = 'squares';
 
             square.addEventListener('mouseover', () => {
-                square.style.backgroundColor = 'red';
+                square.style.backgroundColor = 'black';
             })
 
 
