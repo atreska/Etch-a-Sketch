@@ -12,15 +12,31 @@ h1,
 
 h1 {
     text-align: center;
+    font-family: 'Press Start 2p', sans-serif;
+    color: azure;
     margin: 1em 0 0 0;
+}
+
+button {
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    padding: .5em;
+    box-shadow: 1px 1px 15px 4px darkorange;
+}
+
+button:hover {
+    background-color: darkgrey;
+    color: azure;
+    box-shadow: 1px 1px 15px 4px yellowgreen;
+
 }
 
 .sketch-container {
     display: flex;
     justify-content: center;
-    border: 30px solid aquamarine;
+    border: 25px solid rgb(166, 166, 166);
     border-radius: 50px;
-    background-color: rgb(131, 31, 31);
+    background-color: rgb(191, 42, 42);
     margin: 0 3em;
 }
 
@@ -39,7 +55,7 @@ h1 {
     flex-direction: column;
     width: 1000px;
     height: 800px;
-    border: 5px solid black;
+    border: 2px solid black;
 
     background-color: white;
 }
