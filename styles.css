@@ -2,14 +2,6 @@ html {
     background-color: rgb(48, 63, 98);
 }
 
-/* .main-container,
-h1,
-.selection-container,
-.selection,
-.sketch-container {
-    border: 1px solid red;
-} */
-
 h1 {
     text-align: center;
     font-family: 'Press Start 2p', sans-serif;
@@ -56,7 +48,6 @@ button:hover {
     width: 1000px;
     height: 800px;
     border: 2px solid black;
-
     background-color: white;
 }
 
