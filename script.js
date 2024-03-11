@@ -56,14 +56,22 @@ function createSquares(enteredNumSquares) {
             square.className = 'squares';
 
             square.addEventListener('mouseover', () => {
-                square.style.backgroundColor = 'black';
+                square.style.backgroundColor = randomSquareColor();
             })
-
 
             squareContainer.append(square);
         }
         sketchBoardContainer.append(squareContainer);
     }
+}
+
+function randomSquareColor() {
+
+    let color1 = Math.floor(Math.random() * 256) + 1;
+    let color2 = Math.floor(Math.random() * 256) + 1;
+    let color3 = Math.floor(Math.random() * 256) + 1;
+    let rgb = `rgb(${color1}, ${color2}, ${color3})`;
+    return rgb;
 }
 
 createSquares(16);
